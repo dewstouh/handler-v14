@@ -1,0 +1,25 @@
+{
+  "name": "v14_handler",
+  "version": "1.0.0",
+  "description": "El mejor handler en v14, compatible con slash y message commands, desarrollado por dewstouh#1088.",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "handler",
+    "handler",
+    "v14",
+    "dewstouh",
+    "bot-del-canal"
+  ],
+  "author": "dewstouh#1088",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "discord.js": "^14.6.0",
+    "dotenv": "^16.0.3",
+    "glob": "^8.0.3",
+    "mongoose": "^6.7.1"
+  }
+}
