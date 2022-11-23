@@ -41,8 +41,8 @@ module.exports = class extends Client {
 
 
     async start() {
-        await this.loadHandlers();
         await this.loadEvents();
+        await this.loadHandlers();
         await this.loadCommands();
         await this.loadSlashCommands();
         await this.db.connect();
@@ -64,7 +64,7 @@ module.exports = class extends Client {
                     const NOMBRE_COMANDO = rutaArchivo.split('\\').pop().split('/').pop().split(".")[0];
                     COMANDO.NAME = NOMBRE_COMANDO;
 
-                    if (NOMBRE_COMANDO) this.commands.set(COMANDO.NAME, COMANDO);
+                    if (NOMBRE_COMANDO) this.commands.set(NOMBRE_COMANDO, COMANDO);
                 } catch (e) {
                     console.log(`ERROR AL CARGAR EL COMANDO ${rutaArchivo}`.bgRed);
                     console.log(e);
