@@ -8,6 +8,8 @@ module.exports = class BotUtils {
     }
 
 
+    
+
     async loadFiles(dirName) {
         const Files = await proGlob(`${process.cwd().replace(/\\/g, "/")}/${dirName}/**/*.{js,json}`);
         Files.forEach((file) => delete require.cache[require.resolve(file)]);
