@@ -63,6 +63,8 @@ module.exports = class extends Client {
 
     }
 
+    
+
     async loadCommands() {
         console.log(`(${process.env.PREFIX}) Cargando comandos`.yellow);
         await this.commands.clear();
@@ -141,6 +143,8 @@ module.exports = class extends Client {
 
     }
 
+    
+
     async loadEvents() {
         console.log(`(+) Cargando eventos`.yellow);
 
@@ -166,6 +170,10 @@ module.exports = class extends Client {
     }
 
 }
+
+
+
+
 
 /*
 ╔═════════════════════════════════════════════════════╗
